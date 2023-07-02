@@ -8,6 +8,7 @@ class CarDatabase
     }
 
 
+
     public static function createTable(): void
     {
 

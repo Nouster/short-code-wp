@@ -4,7 +4,7 @@ p.flashMessageerror {
 	color: white;
 	width: 90%;
 	border-radius: 10px;
-	margin: auto;
+	margin: 100px auto 0 auto;
 	padding: 20px;
 	cursor: pointer;
 }
@@ -15,7 +15,7 @@ p.flashMessagesuccess {
 	color: white;
 	width: 90%;
 	border-radius: 10px;
-	margin: auto;
+	margin: 100px auto 0 auto;
 	padding: 20px;
 	cursor: pointer;
 }
@@ -26,7 +26,7 @@ p.flashMessagepartialError {
 	color: white;
 	width: 90%;
 	border-radius: 10px;
-	margin: auto;
+	margin: 100px auto 0 auto;
 	padding: 20px;
 	cursor: pointer;
 }

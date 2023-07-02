@@ -14,10 +14,20 @@ require_once 'CarSession.php';
 require_once 'CarDatabase.php';
 require_once 'CarAdmin.php';
 require_once 'LoadFile.php';
+require_once 'CarWidget.php';
+
 class MyCar
 {
     public function __construct()
     {
+
+        /**
+         * Lorsque Wordpress est prêt à charger les widgets (widget_init), nous lui demandons de recenser le notre en renseignant le nom de la classe du widget
+         */
+        add_action('widgets_init', function () {
+            register_widget('CarWidget');
+        });
+
         new CarAdmin();
         register_activation_hook(__FILE__, ['CarDatabase', 'createTable']);
         register_uninstall_hook(__FILE__, ['CarDatabase', 'dropTable']);
