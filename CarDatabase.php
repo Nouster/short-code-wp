@@ -67,7 +67,7 @@ class CarDatabase
 
                 $result = $wpdb->insert("{$wpdb->prefix}car", $data);
                 if ($result === false) {
-                    $session->createMessage('error', 'Une erreur est survenue : ' . $wpdb->last_error);
+                    $session->createMessage('error', 'Une erreur est survenue : La véhicule immatriculé ' . $data['licence_plate'] . ' est déjà enregistré. ');
                 } else {
                     $session->createMessage('success', 'Enregistrement effectué avec succès');
                 }
