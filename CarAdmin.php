@@ -46,7 +46,7 @@ class CarAdmin
     {
         echo '<h1>' . get_admin_page_title() . '</h1>';
         echo '<p>Bienvenue sur la page d\'accueil du plugin</p>';
-        echo '<p>Pour afficher la liste des véhicules inscrits dans un article, utilisez le shortcode <br><code>[my_car_list subtitle="sous titre facultatif"][/my_car_list]</code></p>';
+        echo '<p>Pour afficher la liste des véhicules inscrits dans un article, utilisez le shortcode <br><code>[my_car_list][/my_car_list]</code></p>';
     }
 
     public function generateCarsHtml()

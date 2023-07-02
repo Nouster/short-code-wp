@@ -27,6 +27,11 @@ class MyCar
             $param1 = 'MyCar';
             LoadFile::CSS($param1);
         });
+        add_action('init', function () {
+            $param1 = 'MyCar';
+            $param2 = 'main.js';
+            LoadFile::JS($param1, $param2);
+        });
 
         add_action('wp_loaded', array('CarDatabase', 'saveForm'), 1);
         add_action('wp_loaded', array($this, 'displayFlashMessage'), 2);

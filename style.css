@@ -6,6 +6,7 @@ p.flashMessageerror {
 	border-radius: 10px;
 	margin: auto;
 	padding: 20px;
+	cursor: pointer;
 }
 
 p.flashMessagesuccess {
@@ -16,6 +17,7 @@ p.flashMessagesuccess {
 	border-radius: 10px;
 	margin: auto;
 	padding: 20px;
+	cursor: pointer;
 }
 
 p.flashMessagepartialError {
@@ -26,6 +28,7 @@ p.flashMessagepartialError {
 	border-radius: 10px;
 	margin: auto;
 	padding: 20px;
+	cursor: pointer;
 }
 
 form {
