@@ -27,7 +27,7 @@ class ShortCodeCar
             <input type="text" name="color" id="color" placeholder="Couleur"><br>
             
             <label for="year">Année de fabrication :</label>
-            <input type="text" name="year" id="year" placeholder="Année de fabrication"><br>
+            <input type="number" min="1900" placeholder="Année de fabrication"><br>
             
             <label for="licence_plate">Plaque d\'immatriculation :</label>
             <input type="text" name="licence_plate" id="licence_plate" placeholder="Plaque d\'immatriculation"><br>

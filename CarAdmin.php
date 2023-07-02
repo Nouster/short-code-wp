@@ -123,16 +123,16 @@ class CarAdmin
             <div>
                 <h3>Marque : {$newestCar->car_brand}</h3>
                 <ul>
-                    <li>Modèle : {$newestCar->car_model}</li>
-                    <li>Couleur : {$newestCar->color}</li>
-                    <li>Année de fabrication : {$newestCar->manufacturing_year}</li>
-                    <li>Plaque d'immatriculation : {$newestCar->licence_plate}</li>
-                    <li>Propriétaire : {$newestCar->fullname}</li>
+                    <li><strong>Modèle :</strong> {$newestCar->car_model}</li>
+                    <li><strong>Couleur :</strong> {$newestCar->color}</li>
+                    <li><strong>Année de fabrication :</strong> {$newestCar->manufacturing_year}</li>
+                    <li><strong>Plaque d'immatriculation : </strong>{$newestCar->licence_plate}</li>
+                    <li><strong>Propriétaire :</strong> {$newestCar->fullname}</li>
                 </ul>
             </div>
             ";
         } else {
-            $html .= "<p>Pas de véhicule enregistré 🙊</p>";
+            $html .= "<p><em>Pas de véhicule enregistré</em> 🙊</p>";
         }
         return $html;
     }
