@@ -78,6 +78,7 @@ class CarAdmin
             $html .= '<table class="my-formulaire-liste" style="border-collapse:collapse">
             <thead>
                 <tr>
+                    <th style="border:1px solid black;">Nom et prénom</th>
                     <th style="border:1px solid black;">Marque</th>
                     <th style="border:1px solid black;">Modèle</th>
                     <th style="border:1px solid black;">Couleur</th>
@@ -89,6 +90,7 @@ class CarAdmin
 
             foreach ($cars as $car) {
                 $html .= "<tr>
+                    <td style='border:1px solid black;'>{$car->fullname}</td>
                     <td style='border:1px solid black;'>{$car->car_brand}</td>
                     <td style='border:1px solid black;'>{$car->car_model}</td>
                     <td style='border:1px solid black;'>{$car->color}</td>
