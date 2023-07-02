@@ -19,7 +19,7 @@ class CarDatabase
             car_model VARCHAR(191) NOT NULL,
             color VARCHAR(191) NOT NULL,
             manufacturing_year VARCHAR(191) NOT NULL,
-            licence_plate VARCHAR(191) NOT NULL,
+            licence_plate VARCHAR(191) NOT NULL UNIQUE,
             registration_year Date NOT NULL
         )");
     }
@@ -90,7 +90,7 @@ class CarDatabase
         return $cars;
     }
 
-    public static function getNewestCar(): object
+    public static function getNewestCar(): object | null
     {
         global $wpdb;
         $newestCar = $wpdb->get_row("SELECT * FROM {$wpdb->prefix}car ORDER BY {$wpdb->prefix}car.manufacturing_year DESC, registration_year DESC LIMIT 1;");

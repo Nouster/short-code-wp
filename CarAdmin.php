@@ -129,6 +129,8 @@ class CarAdmin
                 </ul>
             </div>
             ";
+        } else {
+            $html .= "<p>Pas de véhicule enregistré 🙊</p>";
         }
         return $html;
     }
