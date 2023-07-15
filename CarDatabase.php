@@ -48,20 +48,21 @@ class CarDatabase
 
             if (empty($missingFields)) {
 
-                $fullname = $_POST['full_name'];
-                $brand = $_POST['brand'];
-                $modele = $_POST['modele'];
-                $color = $_POST['color'];
-                $year = $_POST['year'];
-                $plate = $_POST['licence_plate'];
+                // $fullname = $_POST['full_name'];
+                // $brand = $_POST['brand'];
+                // $modele = $_POST['modele'];
+                // $color = $_POST['color'];
+                // $year = $_POST['year'];
+                // $plate = $_POST['licence_plate'];
 
+                extract($_POST);
                 $data = [
-                    'fullname' => $fullname,
+                    'fullname' => $full_name,
                     'car_brand' => $brand,
                     'car_model' => $modele,
                     'color' => $color,
                     'manufacturing_year' => $year,
-                    'licence_plate' => $plate,
+                    'licence_plate' => $licence_plate,
                     'registration_year' => date('Y-m-d')
                 ];
 
